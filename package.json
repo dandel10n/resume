@@ -1,5 +1,5 @@
 {
-  "name": "furniture_store_project",
+  "name": "resume_project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dandel10n/furniture_store.git"
+    "url": "git+https://github.com/dandel10n/resume.git"
   },
   "author": "Mariya Dergay",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dandel10n/furniture_store/issues"
+    "url": "https://github.com/dandel10n/resume/issues"
   },
   "homepage": "",
   "devDependencies": {
