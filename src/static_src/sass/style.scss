@@ -1,4 +1,109 @@
-h1 {
-  color: blue;
-  background: yellow;
+@import "reset";
+@import "base";
+
+.about-me {
+  width: 100%;
+  background-color: #660066;
+  color: #fff;
+  padding: 4rem 0;
 }
+
+.avatar {
+  width: 15rem;
+  height: 15rem;
+  margin: auto;
+}
+
+.avatar__image {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.name,
+.profession {
+  text-align: center;
+}
+
+.name {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.profession {
+  font-size: 1.5rem;
+}
+
+.basic-information {
+  padding-left: 3rem;
+  width: 90%;
+}
+
+.block-header {
+  font-size: 2rem;
+  margin: 2.5rem 0;
+}
+
+.block-text {
+  padding-left: 3rem;
+  line-height: 1.5;
+}
+
+.icon {
+  font-size: 2.5rem;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.mini-icon {
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.mini-icon__mobile {
+  font-size: 2.5rem;
+}
+
+.social-media-links {
+  width: 6.5rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2rem;
+
+  & .icon {
+    font-size: 3rem;
+  }
+}
+
+.professional-info {
+  width: 100%;
+  padding: 4rem 0 4rem 3rem;
+}
+
+.professional-info__header {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.professional-info__text {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+
+  .about-me {
+    width: 40%;
+    color: #fff;
+  }
+
+  .professional-info {
+    width: 60%;
+  }
+}
+

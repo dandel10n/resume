@@ -26,8 +26,8 @@ gulp.task('connect', function() {
 //Copy Task
 //Copies font-awesome
 gulp.task('copy', function() {
-    gulp.src('src/static_src/bebas-neue/**')
-        .pipe(gulp.dest('build/static/bebas-neue'));
+    gulp.src('src/static_src/font-awesome-4.7.0/**')
+        .pipe(gulp.dest('build/static/font-awesome-4.7.0'));
 });
 
 //Scripts Task
