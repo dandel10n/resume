@@ -1,10 +1,12 @@
 @import "reset";
 @import "base";
 
+$main-color: #139575;
+
 .about-me {
   width: 100%;
   color: #fff;
-  background: #660066;
+  background: $main-color;
   padding: 4rem 0;
 }
 
@@ -26,6 +28,7 @@
 }
 
 .name {
+  font-weight: 300;
   font-size: 2.5rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -41,6 +44,7 @@
 }
 
 .block-header {
+  display: inline-block;
   font-size: 2rem;
   margin: 2.5rem 0;
 }
@@ -54,8 +58,7 @@
 .icon {
   font-size: 2.5rem;
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
+  padding-right: 0.5rem;
   color: #fff;
   text-decoration: none;
 }
@@ -63,22 +66,49 @@
 .mini-icon {
   font-size: 1.5rem;
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  padding-right: 0.5rem;
 }
 
 .mini-icon__mobile {
   font-size: 2.5rem;
 }
 
+.contacts__block-text {
+  padding: 0;
+  display: inline-block;
+}
+
+.contact-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 2.5rem;
+}
+
 .social-media-links {
-  width: 6.5rem;
-  margin: auto;
-  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
 
-  & .icon {
+  &__icon {
     font-size: 3rem;
+    color: #fff;
+    border-radius: 50%;
+
+    &:hover {
+      color: #4CC519;
+    }
+  }
+}
+
+.social-media-link {
+  margin-right: 1rem;
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
@@ -124,7 +154,16 @@
   padding-top: 23%;
   color: #fff;
   text-align: center;
-  background-color: rgba(102, 0, 102, 0.702);;
+  background-color: rgba($main-color, 0.702);
+}
+
+.email {
+  color: #fff;
+
+  &:hover {
+    color: #4CC519;
+    text-decoration: none;
+  }
 }
 
 @media screen and (min-width: 600px) {
