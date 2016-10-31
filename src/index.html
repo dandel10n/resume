@@ -1,60 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "_base.html" %}
 
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <title>Resume</title>
-        <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="static/css/style.css">
+{% block content %}
 
-    </head>
-
-    <body>
-
-        <section class="about-me">
-            <div class="avatar"><img src="static/img/avatar.png" alt="avatar" class="avatar__image"></div>
-            <p class="name">Mariya Radchuk</p>
-            <p class="profession">Front-end developer</p>
-            <section class="basic-information">
-                <section class="target">
-                    <h2 class="block-header"><i class="fa fa-bullseye icon" aria-hidden="true"></i>Objective</h2>
-                    <p class="block-text">Searching a position of a Front-end web developer in a challenging environment that utilizes teamwork effort resourcing,learning and developing new awesome designs for mobile and web application.</p>
-                </section>
-                <section class="general-info">
-                    <h2 class="block-header"><i class="fa fa-info-circle icon" aria-hidden="true"></i>General info</h2>
-                    <article class="block-text">
-                        <p>Nationality : Belarus</p>
-                        <p>Date of Birth : 28Aug 1991</p>
-                    </article>
-                </section>
-                <section class="contacts">
-                    <h2 class="block-header"><i class="fa fa-address-book-o icon" aria-hidden="true"></i>For contact</h2>
-                    <article class="block-text">
-                        <p><i class="fa fa-mobile mini-icon mini-icon__mobile" aria-hidden="true"></i>+375-29-179-39-66</p>
-                        <p><i class="fa fa-envelope-o mini-icon" aria-hidden="true"></i>mary.radchuk@gmail.com</p>
-                    </article>
-                </section>
-            </section>
-            <section class="social-media-links">
-                <a href="#" class="fa fa-linkedin-square icon" aria-hidden="true"></a>
-                <a href class="fa fa-github icon" aria-hidden="true"></a>
-            </section>
-        </section>
-
-        <section class="professional-info">
-            <h2 class="professional-info__header">Skills</h2>
-            <ul class="block-text professional-info__text">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Basic knowledge of JQuery</li>
-            </ul>
-            <h2 class="professional-info__header">Portfolio</h2>
-            <article class="block-text professional-info__text">
-
-            </article>
-        </section>
-
-    </body>
-
-</html>
+    <section class="professional-info">
+        <h2 class="professional-info__header">Skills</h2>
+        <ul class="professional-info__block">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Basic knowledge of JS and JQuery</li>
+        </ul>
+        <h2 class="professional-info__header">Portfolio</h2>
+        <article class="professional-info__block">
+            <a href="#" class="preview">
+                <img src="static/img/design_studio.png" alt="Design studio preview" class="preview__image">
+                <p class="preview__image-desc">Show full project</p>
+            </a>
+            <a href="#" class="preview">
+                <img src="static/img/furniture_store.png" alt="Furniture shop preview" class="preview__image">
+                <p class="preview__image-desc">Show full project</p>
+            </a>
+        </article>
+    </section>
+{% endblock %}

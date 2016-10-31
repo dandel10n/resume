@@ -3,8 +3,8 @@
 
 .about-me {
   width: 100%;
-  background-color: #660066;
   color: #fff;
+  background: #660066;
   padding: 4rem 0;
 }
 
@@ -48,6 +48,7 @@
 .block-text {
   padding-left: 3rem;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 .icon {
@@ -91,8 +92,46 @@
   padding-bottom: 2rem;
 }
 
-.professional-info__text {
+.professional-info__block {
   padding-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.preview {
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+  position: relative;
+
+  &:hover .preview__image-desc {
+    visibility: visible;
+  }
+}
+
+.preview__image,
+.preview__image-desc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.preview__image-desc {
+  visibility: hidden;
+  padding-top: 23%;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(102, 0, 102, 0.702);;
+}
+
+@media screen and (min-width: 600px) {
+  .preview {
+    width: 15rem;
+    height: 7.5rem;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -104,6 +143,11 @@
 
   .professional-info {
     width: 60%;
+  }
+
+  .preview {
+    width: 30rem;
+    height: 15rem;
   }
 }
 
