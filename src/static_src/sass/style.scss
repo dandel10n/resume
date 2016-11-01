@@ -166,6 +166,10 @@ $main-color: #139575;
   }
 }
 
+.links-for-print {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   .preview {
     width: 15rem;
@@ -189,4 +193,3 @@ $main-color: #139575;
     height: 15rem;
   }
 }
-

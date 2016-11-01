@@ -7,14 +7,15 @@
         <title>Resume</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" media="screen" href="static/css/style.css">
+        <link rel="stylesheet" media="print" href="static/css/print.css">
 
     </head>
 
     <body>
 
     <section class="about-me">
-        <div class="avatar"><img src="static/img/avatar.png" alt="avatar" class="avatar__image"></div>
+        <div class="avatar"><img src="static/img/avatar1.jpg" alt="avatar" class="avatar__image"></div>
         <p class="name">Mariya Radchuk</p>
         <p class="profession">Front-end developer</p>
         <section class="basic-information">
@@ -25,26 +26,29 @@
             <section class="general-info">
                 <i class="fa fa-info-circle icon" aria-hidden="true"></i><h2 class="block-header">General info</h2>
                 <article class="block-text">
-                    <p>Nationality : Belarus</p>
-                    <p>Date of Birth : 28Aug 1991</p>
+                    <p>Nationality: Belarus</p>
+                    <p>Date of Birth: 28Aug 1991</p>
                 </article>
             </section>
             <section class="contacts">
                 <i class="fa fa-address-book-o icon" aria-hidden="true"></i><h2 class="block-header">For contact</h2>
-                <article class="block-text">
-                    <div class="contact-info">
+                <ul class="block-text">
+                    <li class="contact-info">
                         <i class="fa fa-mobile mini-icon mini-icon__mobile" aria-hidden="true"></i>
-                        <p class="contacts__block-text">+375-29-179-39-66</p>
-                    </div>
-                    <div class="contact-info">
-                        <i class="fa fa-envelope-o mini-icon" aria-hidden="true"></i><a href="mailto:radchuk.mary@gmail.com?Subject=Resume%20response" target="_top" class="contacts__block-text email">radchuk.mary@gmail.com</a>
-                    </div>
-                </article>
+                        <span class="contacts__block-text">+375-29-179-39-66</span>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa fa-envelope-o mini-icon" aria-hidden="true"></i>
+                        <a href="mailto:radchuk.mary@gmail.com?Subject=Resume%20response" target="_top" class="contacts__block-text email">radchuk.mary@gmail.com</a>
+                    </li>
+                    <li class="links-for-print">https://github.com/dandel10n</li>
+                    <li class="links-for-print">https://www.linkedin.com/in/mariya-radchuk</li>
+                </ul>
             </section>
         </section>
         <section class="social-media-links">
-            <div class="social-media-link"><a href="#" class="fa fa-linkedin icon social-media-links__icon" aria-hidden="true"></a></div>
-            <div class="social-media-link"><a href class="fa fa-github icon social-media-links__icon" aria-hidden="true"></a></div>
+            <div class="social-media-link"><a href="https://www.linkedin.com/in/mariya-radchuk" class="fa fa-linkedin icon social-media-links__icon" aria-hidden="true"></a></div>
+            <div class="social-media-link"><a href="https://github.com/dandel10n" class="fa fa-github icon social-media-links__icon" aria-hidden="true"></a></div>
         </section>
     </section>
 
