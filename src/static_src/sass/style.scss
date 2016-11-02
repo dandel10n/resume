@@ -49,16 +49,13 @@ $hover-color: #4CC519;
   display: inline-block;
   font-size: 2rem;
   margin: 2.5rem 0;
-}
-
-.project-header {
-  display: block;
+  max-width: 90%;
 }
 
 .block-text {
   padding-left: 3rem;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 1.1rem;
 }
 
 .icon {
@@ -89,7 +86,6 @@ $hover-color: #4CC519;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
-  min-height: 2.5rem;
 }
 
 .social-media-links {
@@ -123,15 +119,9 @@ $hover-color: #4CC519;
   padding: 4rem 0 4rem 3rem;
 }
 
-.professional-info__header {
-  font-size: 3rem;
-  padding-bottom: 2rem;
-}
-
 .professional-info__block {
-  padding-bottom: 2rem;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 1.1rem;
 }
 
 .preview {
@@ -144,6 +134,7 @@ $hover-color: #4CC519;
 
   &:hover .preview__image-desc {
     visibility: visible;
+    background-color: rgba($main-color, 0.702);
   }
 }
 
@@ -156,11 +147,23 @@ $hover-color: #4CC519;
   left: 0;
 }
 
+.furniture-store {
+  background: #4CC519 url(../img/furniture_store.png) 50% 0;
+  background-size: cover;
+}
+
+.design-studio {
+  background: #4CC519 url(../img/design_studio.png) 50% 0;
+  background-size: cover;
+}
+
 .preview__image-desc {
   visibility: hidden;
   color: #fff;
   text-align: center;
-  background-color: rgba($main-color, 0.702);
+  text-shadow: 2px 2px 2px #595959;
+  background-color: rgba($main-color, 0);
+  transition: background-color 0.2s ease-out;
 }
 
 .preview__big {
@@ -176,13 +179,11 @@ $hover-color: #4CC519;
   visibility: visible;
   background-color: rgba($main-color, 0.5);
   font-size: 1.5rem;
-  font-weight: 600;
-  text-shadow: 2px 2px #595959;
   transition: background-color 0.2s ease-out;
 }
 
 .preview__big:hover .preview__big-image-desc {
-  background-color: rgba($main-color, 0.702);
+  background-color: rgba($main-color, 0.802);
 }
 
 .email {
@@ -203,11 +204,6 @@ $hover-color: #4CC519;
   padding-bottom: 2rem;
 }
 
-.preview__header {
-  font-size: 2rem;
-  padding-bottom: 2rem;
-}
-
 .github_link {
   color: $main-color;
 
@@ -217,6 +213,7 @@ $hover-color: #4CC519;
 }
 
 @media screen and (min-width: 600px) {
+
   .preview {
     width: 15rem;
     height: 7.5rem;
@@ -227,7 +224,6 @@ $hover-color: #4CC519;
 
   .about-me {
     width: 40%;
-    color: #fff;
   }
 
   .professional-info {
