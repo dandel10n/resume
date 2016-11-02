@@ -3,7 +3,7 @@
 {% block content %}
 
     <section class="professional-info">
-        <h2 class="block-header">Skills</h2>
+        <h2 class="block-header professional-info__header">Skills</h2>
         <ul class="professional-info__block">
             <li>HTML</li>
             <li>CSS</li>
@@ -12,18 +12,19 @@
         </ul>
         <h2 class="block-header">Portfolio</h2>
         <article class="professional-info__block">
-            <a href="furniture_store.html" class="preview">
+            <a href="/furniture_store.html" class="preview">
                 <div class="preview__image furniture-store"></div>
                 <p class="preview__image-desc">Show details</p>
             </a>
-            <a href="design_studio.html" class="preview">
+            <a href="/design_studio.html" class="preview">
                 <div class="preview__image design-studio"></div>
                 <p class="preview__image-desc">Show details</p>
             </a>
             <ul class="links-for-print">
-                <li>link1</li>
-                <li>link2</li>
+                <li>{{ base_url }}/furniture_store.html</li>
+                <li>{{ base_url }}/design_studio.html</li>
             </ul>
         </article>
+
     </section>
 {% endblock %}

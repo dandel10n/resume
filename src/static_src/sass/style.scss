@@ -52,6 +52,10 @@ $hover-color: #4CC519;
   max-width: 90%;
 }
 
+.professional-info__header {
+  margin-top: 0;
+}
+
 .block-text {
   padding-left: 3rem;
   line-height: 1.5;
@@ -210,6 +214,14 @@ $hover-color: #4CC519;
   &:hover {
     text-decoration: none;
   }
+}
+
+#print-button {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 2rem;
+  color: #595959;
 }
 
 @media screen and (min-width: 600px) {
