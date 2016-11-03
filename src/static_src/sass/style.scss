@@ -221,11 +221,19 @@ $hover-color: #4CC519;
   top: 5%;
   right: 5%;
   font-size: 2rem;
-  color: #595959;
+  color: #fff;
 }
 
 .education-table td {
   padding: 0.3rem;
+}
+
+.education-table {
+  max-width: 90%;
+
+  tr {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -233,6 +241,12 @@ $hover-color: #4CC519;
   .preview {
     width: 15rem;
     height: 7.5rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #print-button {
+    color: #595959;
   }
 }
 
