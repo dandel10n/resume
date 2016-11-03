@@ -2,29 +2,63 @@
 
 {% block content %}
 
-    <section class="professional-info">
-        <h2 class="block-header professional-info__header">Skills</h2>
-        <ul class="professional-info__block">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Git</li>
-            <li>Basic knowledge of JS and JQuery</li>
-        </ul>
-        <h2 class="block-header">Portfolio</h2>
-        <article class="professional-info__block">
-            <a href="/furniture_store.html" class="preview">
-                <div class="preview__image furniture-store"></div>
-                <p class="preview__image-desc">Show details</p>
-            </a>
-            <a href="/design_studio.html" class="preview">
-                <div class="preview__image design-studio"></div>
-                <p class="preview__image-desc">Show details</p>
-            </a>
-            <ul class="links-for-print">
-                <li>{{ base_url }}/furniture_store.html</li>
-                <li>{{ base_url }}/design_studio.html</li>
-            </ul>
-        </article>
+<section class="professional-info">
+    <h2 class="block-header professional-info__header">Skills</h2>
+    <ul class="professional-info__block">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git</li>
+        <li>Basic knowledge of JS and JQuery</li>
+    </ul>
 
-    </section>
+    <h2 class="block-header">Education</h2>
+    <ul class="professional-info__block">
+        <li>
+            <table class="education-table">
+                <tr>
+                    <td>2011 – 2015</td>
+                    <td>Belorussian State Economic University</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Faculty: Banking</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Specialization: Accounting, analysis and audit in bank</td>
+                </tr>
+            </table>
+        </li>
+
+        <li>
+            <table class="education-table">
+                <tr>
+                    <td>2007 - 2010</td>
+                    <td>Minsk State College of Service sector</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Specialization: Banking</td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+
+    <h2 class="block-header">Portfolio</h2>
+    <article class="professional-info__block">
+        <a href="/furniture_store.html" class="preview">
+            <div class="preview__image furniture-store"></div>
+            <p class="preview__image-desc">Show details</p>
+        </a>
+        <a href="/design_studio.html" class="preview">
+            <div class="preview__image design-studio"></div>
+            <p class="preview__image-desc">Show details</p>
+        </a>
+        <ul class="links-for-print">
+            <li>{{ base_url }}/furniture_store.html</li>
+            <li>{{ base_url }}/design_studio.html</li>
+        </ul>
+    </article>
+
+</section>
 {% endblock %}

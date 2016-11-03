@@ -152,12 +152,12 @@ $hover-color: #4CC519;
 }
 
 .furniture-store {
-  background: #4CC519 url(../img/furniture_store.png) 50% 0;
+  background: $main-color url(../img/furniture_store.png) 50% 0;
   background-size: cover;
 }
 
 .design-studio {
-  background: #4CC519 url(../img/design_studio.png) 50% 0;
+  background: $main-color url(../img/design_studio.png) 50% 0;
   background-size: cover;
 }
 
@@ -222,6 +222,10 @@ $hover-color: #4CC519;
   right: 5%;
   font-size: 2rem;
   color: #595959;
+}
+
+.education-table td {
+  padding: 0.3rem;
 }
 
 @media screen and (min-width: 600px) {

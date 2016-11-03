@@ -18,6 +18,15 @@ body {
 
 .target {
   order: 2;
+
+  &:before {
+    clear: both;
+  }
+}
+
+.target .block-text,
+ul {
+  padding-left: 2rem;
 }
 
 .general-info {
@@ -40,6 +49,7 @@ body {
 
 ul {
   line-height: 1.5;
+  list-style-type: none;
 }
 
 .avatar__image {
@@ -49,16 +59,25 @@ ul {
 }
 
 .social-media-links,
+.general-info,
 .icon,
 .mini-icon,
 .preview,
-.github_link,
 .preview__big,
-#print-button {
+#print-button,
+.not-for-print {
   display: none;
 }
 
 .email {
   color: #000;
   text-decoration: none;
+}
+
+.project__block {
+
+  .github_link {
+    color: #000;
+    text-decoration: none;
+  }
 }
