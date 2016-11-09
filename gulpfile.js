@@ -62,7 +62,7 @@ gulp.task('image', function() {
 
 gulp.task('nunjucks', function() {
     gulp.src('src/*.html')
-        .pipe(nunjucks.compile({base_url: 'http://192.168.1.6:8000'}))
+        .pipe(nunjucks.compile({base_url: 'https://dandel10n.github.io'}))
         .pipe(gulp.dest('build'))
         .pipe(connect.reload());
 });
