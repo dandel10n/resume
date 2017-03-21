@@ -1,0 +1,27 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<section class="professional-info">
+
+    <h2 class="block-header">Trampolines site project</h2>
+
+    <section class="professional-info__block">
+
+        <p class="project__block">This is one of test tasks which I made for Front-End developer vacancy. 
+        The project is written with sass and compiled with Gulp. It was made responsive, using mobile first.</p>
+
+        <p  class="project__block">You can find the source code of the project on <a href="https://github.com/dandel10n/trampolines_site" class="link">github</a> or take a look at live demo:</p>
+
+        <ul class="links-for-print">
+            <li>https://github.com/dandel10n/trampolines_site</li>
+            <li>{{ base_url }}/trampolines_site/</li>
+        </ul>
+
+        <a href="{{ base_url }}/trampolines_site/" class="preview__big">
+            <div class="preview__image preview__big-image trampolines-site"></div>
+            <p class="preview__image-desc preview__big-image-desc">Live demo</p>
+        </a>
+
+    </section>
+</section>
+{% endblock %}
