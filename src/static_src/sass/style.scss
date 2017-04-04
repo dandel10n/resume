@@ -131,9 +131,9 @@ $hover-color: #4CC519;
 .preview {
   display: block;
   border: 1px solid $main-color;
-  width: 20rem;
-  height: 10rem;
-  line-height: 10rem;
+  width: 70%;
+  height: 15rem;
+  line-height: 15rem;
   margin-bottom: 2rem;
   position: relative;
 
@@ -156,7 +156,6 @@ $hover-color: #4CC519;
   display: inline-block;
   margin-bottom: 2rem;
   margin-right: 1rem;
-  width: 10rem;
 }
 
 .furniture-store {
@@ -274,18 +273,6 @@ $hover-color: #4CC519;
   }
 }
 
-@media screen and (min-width: 600px) {
-
-  .preview {
-    width: 15rem;
-    height: 7.5rem;
-  }
-
-  .js-project-preview {
-    width: 7.5rem;
-  }
-}
-
 @media screen and (min-width: 700px) {
   #print-button {
     color: #595959;
@@ -303,7 +290,7 @@ $hover-color: #4CC519;
   }
 
   .preview {
-    width: 37rem;
+    width: 37.2rem;
     height: 18rem;
     line-height: 18rem;
   }
