@@ -2,11 +2,23 @@
   "name": "resume_project",
   "version": "1.0.0",
   "description": "",
+  "private": true,
+  "homepage": "http://dandel10n.github.io",
   "main": "index.js",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
   "scripts": {
-    "build": "gulp build",
-    "watch": "gulp watch",
-    "webserver": "gulp webserver"
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -17,13 +29,15 @@
   "bugs": {
     "url": "https://github.com/dandel10n/resume/issues"
   },
-  "homepage": "",
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-imagemin": "^3.0.3",
     "gulp-nunjucks": "^2.3.0",
     "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "node-sass-chokidar": "0.0.3",
+    "react-scripts": "0.9.5"
   }
 }

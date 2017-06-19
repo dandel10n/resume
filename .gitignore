@@ -5,6 +5,7 @@
 
 # Compiled static
 build
+src/static_src/sass/*.css
 
 # Logs
 logs
