@@ -4,8 +4,7 @@
 .idea
 
 # Compiled static
-build
-src/static_src/sass/*.css
+public
 
 # Logs
 logs
