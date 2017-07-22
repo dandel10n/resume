@@ -126,6 +126,22 @@ $hover-color: #4CC519;
 .professional-info__block {
   line-height: 1.5;
   font-size: 1.1rem;
+
+  .professional-info__button {
+      display: inline-block;
+
+      &:hover,
+      &:visited,
+      &:active,
+      &:link {
+          text-decoration: none;
+          cursor: pointer;
+      }
+
+      span {
+          background-color: $main-color;
+      }
+  }
 }
 
 .preview {
@@ -205,6 +221,7 @@ $hover-color: #4CC519;
 .recipe_box {
   background: $main-color url(../img/recipe_box.png) 50% 0;
 }
+
 
 .preview__image {
   background-size: cover;

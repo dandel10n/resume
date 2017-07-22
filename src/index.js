@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './static_src/sass/style.css';
-import myphoto from './static_src/img/myphoto.png';
+import css from './static_src/sass/style.scss';
+import Projects from './components/Projects.js';
+import avatar from './static_src/img/myphoto.png'
 
 class ResumeTemplate extends React.Component {
     render() {
         return (
             <div className="resume-container">
                 <section className="about-me">
-                    <a href="/" className="avatar"><img src={myphoto} alt="avatar" className="avatar__image" /></a>
+                    <a href="/" className="avatar"><img src={avatar} alt="avatar" className="avatar__image" /></a>
                     <p className="name">Mariya Radchuk</p>
                     <p className="profession">Front-end developer</p>
                     <section className="basic-information">
@@ -56,72 +57,21 @@ class ProfessionalInfo extends React.Component {
         return(
             <section className="professional-info">
                 <h2 className="block-header professional-info__header">Skills</h2>
-                <ul className="professional-info__block">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SASS</li>
-                    <li>Git</li>
-                    <li>JavaScript</li>
-                    <li>JQuery</li>
-                    <li>React</li>
-                </ul>
+                <div className="professional-info__block">
+                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">HTML</span></a>
+                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">CSS</span></a>
+                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">SASS</span></a>
+                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">Git</span></a>
+                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">JavaScript</span></a>
+                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">JQuery</span></a>
+                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">React</span></a>
+                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">Gulp</span></a>
+                </div>
 
                 <h2 className="block-header">Portfolio</h2>
                 <article className="professional-info__block">
-                    <a href="/furniture_store.html" className="preview">
-                        <div className="preview__image furniture-store"></div>
-                        <p className="preview__image-desc">Show details</p>
-                    </a>
-                    <a href="/trampolines_site.html" className="preview">
-                        <div className="preview__image trampolines-site"></div>
-                        <p className="preview__image-desc">Show details</p>
-                    </a>
-                    <a href="/global_factoring_network_site.html" className="preview">
-                        <div className="preview__image global-factoring-network"></div>
-                        <p className="preview__image-desc">Show details</p>
-                    </a>
-                    <a href="/design_studio.html" className="preview">
-                        <div className="preview__image design-studio"></div>
-                        <p className="preview__image-desc">Show details</p>
-                    </a>
-                    <div>
-                      <div>
-                          <a href="/js_calculator.html" className="preview js-project-preview">
-                              <div className="preview__image js-calculator"></div>
-                              <p className="preview__image-desc">Show details</p>
-                          </a>
-                          <a href="/twitchTV.html" className="preview js-project-preview">
-                              <div className="preview__image twitchTV"></div>
-                              <p className="preview__image-desc">Show details</p>
-                          </a>
-                      </div>
-                      <div>
-                          <a href="/wiki_viewer.html" className="preview js-project-preview">
-                              <div className="preview__image wiki-viewer"></div>
-                              <p className="preview__image-desc">Show details</p>
-                          </a>
-                          <a href="/pomodoro_clock.html" className="preview js-project-preview">
-                              <div className="preview__image pomodoro-clock"></div>
-                              <p className="preview__image-desc">Show details</p>
-                          </a>
-                          <a href="/tic_tac_toe.html" className="preview js-project-preview">
-                              <div className="preview__image tic_tac_toe"></div>
-                              <p className="preview__image-desc">Show details</p>
-                          </a>
-                          <a href="/simon_game.html" className="preview js-project-preview">
-                              <div className="preview__image simon_game"></div>
-                              <p className="preview__image-desc">Show details</p>
-                          </a>
-                          <a href="/camper_leaderboard.html" className="preview js-project-preview">
-                              <div className="preview__image camper_leaderboard"></div>
-                              <p className="preview__image-desc">Show details</p>
-                          </a>
-                          <a href="/recipe_box.html" className="preview js-project-preview">
-                              <div className="preview__image recipe_box"></div>
-                              <p className="preview__image-desc">Show details</p>
-                          </a>
-                      </div>
-                    </div>
+                    <Projects />
+
                     <ul className="links-for-print">
                         <li>/furniture_store/</li>
                         <li>/design_studio_project/</li>
@@ -137,6 +87,7 @@ class ProfessionalInfo extends React.Component {
                         <li>/recipe_box/</li>
                     </ul>
                 </article>
+
 
             </section>
         )
