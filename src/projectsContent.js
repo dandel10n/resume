@@ -17,7 +17,7 @@ const projectsContent = [
         description: "This site prototype was made as studying project. It was designed by Yana Smirnova and Natalia Izum.",
         url: 'https://dandel10n.github.io/furniture_store/',
         image: furniture_store,
-        technologies: ['SASS', 'Gulp', 'Nunjucks'],
+        technologies: ['Sass', 'Gulp', 'Nunjucks'],
         repository: 'https://github.com/dandel10n/furniture_store'
     },
     {
@@ -25,7 +25,7 @@ const projectsContent = [
         description: "This is one of test tasks which I made for Front-End developer vacancy. ",
         url: 'https://dandel10n.github.io/trampolines_site/',
         image: trampolines_site,
-        technologies: ['SASS', 'Gulp'],
+        technologies: ['Sass', 'Gulp'],
         repository: 'https://github.com/dandel10n/trampolines_site'
     },
     {
@@ -33,7 +33,7 @@ const projectsContent = [
         description: "It is my first studying project in front-end. This design was made by Rudhi Sasmito.",
         url: 'https://dandel10n.github.io/design_studio_project/',
         image: design_studio,
-        technologies: ['SASS', 'Gulp'],
+        technologies: ['Sass', 'Gulp'],
         repository: 'https://github.com/dandel10n/design_studio_project'
     },
     {
@@ -41,7 +41,7 @@ const projectsContent = [
         description: 'This is one of test tasks which I made for Front-End developer position.',
         url: 'https://dandel10n.github.io/global_factoring_network_site/',
         image: global_factoring_network,
-        technologies: ['SASS','Gulp'],
+        technologies: ['Sass','Gulp'],
         repository: 'https://github.com/dandel10n/global_factoring_network_site'
     },
     {
@@ -49,7 +49,7 @@ const projectsContent = [
         description: 'Online recipe box for your favourite recipes.',
         url: 'https://dandel10n.github.io/recipe_box/',
         image: recipe_box,
-        technologies: ['React', 'Local storage'],
+        technologies: ['React'],
         repository: 'https://github.com/dandel10n/recipe_box'
     },
     {
@@ -57,7 +57,7 @@ const projectsContent = [
         description: 'Classic Simon game for testing your memory.',
         url: 'https://dandel10n.github.io/simon_game/',
         image: simon_game,
-        technologies: ['Jquery'],
+        technologies: ['jQuery'],
         repository: 'https://github.com/dandel10n/simon_game'
     },
     {
@@ -65,7 +65,7 @@ const projectsContent = [
         description: 'Classic Tic-Tac-Toe game for one or two players.',
         url: 'https://dandel10n.github.io/tic-tac-toe_game',
         image: tic_tac_toe,
-        technologies: ['Jquery'],
+        technologies: ['jQuery'],
         repository: 'https://github.com/dandel10n/tic-tac-toe_game/'
     },
     {
@@ -73,7 +73,7 @@ const projectsContent = [
         description: 'Search app for Twitch.tv streaming service.',
         url: 'https://dandel10n.github.io/twitchTV/',
         image: twitch_tv,
-        technologies: ['Jquery'],
+        technologies: ['jQuery'],
         repository: 'https://github.com/dandel10n/twitchTV'
     },
     {
@@ -81,7 +81,7 @@ const projectsContent = [
         description: 'A list of the most active freeCodeCamp participants.',
         url: 'https://dandel10n.github.io/camper_leaderboard/',
         image: camper_leaderboard,
-        technologies: ['Jquery'],
+        technologies: ['React'],
         repository: 'https://github.com/dandel10n/camper_leaderboard'
     },
     {
@@ -89,7 +89,7 @@ const projectsContent = [
         description: 'Search app for Wikipedia articles',
         url: 'https://dandel10n.github.io/wiki_viewer/',
         image: wiki_viewer,
-        technologies: ['Jquery'],
+        technologies: ['jQuery'],
         repository: 'https://github.com/dandel10n/wiki_viewer'
     },
     {
@@ -97,7 +97,7 @@ const projectsContent = [
         description: 'Online timer for Pomodoro time management technique.',
         url: 'https://dandel10n.github.io/pomodoro_clock',
         image: pomodoro_clock,
-        technologies: ['Jquery'],
+        technologies: ['jQuery'],
         repository: 'https://github.com/dandel10n/pomodoro_clock'
     },
     {
@@ -105,7 +105,7 @@ const projectsContent = [
         description: 'Online calculator.',
         url: 'https://dandel10n.github.io/JS-Calculator/',
         image: js_calculator,
-        technologies: ['Jquery'],
+        technologies: ['jQuery'],
         repository: 'https://github.com/dandel10n/JS-Calculator'
     }]
 

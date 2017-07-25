@@ -6,26 +6,26 @@ function Project(props) {
         <span
             key={technology}
             className="label label-info"
-        >{technology}</span>
+        >{technology}&emsp;</span>
     ));
     return (
-        <section className="professional-info">
-
-            <h2 className="block-header"> { props.name } </h2>
-
-            <section className="professional-info__block">
-                <p className="project__block">{ props.description }</p>
-                <p  className="project__block">You can find the source code of the project on <a href={ props.repository } className="link">github</a> or take a look at live demo:</p>
-                <a href={ props.url } className="preview__big">
-                    <div className="preview__image preview__big-image camper_leaderboard">
-                        <img
-                            src={props.image}
-                            alt={props.name}
-                        />
-                    </div>
-                    <p className="preview__image-desc preview__big-image-desc">Live demo</p>
+        <section className="professional-info__block">
+            <h2 className="project__name"> { props.name } </h2>
+            <div className="project__image">
+                <a href={ props.url } className="preview">
+                    <img className="preview__image"
+                        src={props.image}
+                        alt={props.name}
+                    />
+                    <p className="preview__image-desc">Live demo</p>
                 </a>
-            </section>
+            </div>
+            <div className="project__description">
+                <p>{ props.description }</p>
+                <p>{technologies}</p>
+            </div>
+            <p  className="project__link">Project on <a href={ props.repository } className="link">github</a></p>
+
         </section>
     )
 }

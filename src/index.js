@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import css from './static_src/sass/style.scss';
 import Projects from './components/Projects.js';
+import technologies from './technologies.js';
 import avatar from './static_src/img/myphoto.png'
 
+
 class ResumeTemplate extends React.Component {
+
     render() {
         return (
             <div className="resume-container">
@@ -53,24 +57,53 @@ class ResumeTemplate extends React.Component {
 }
 
 class ProfessionalInfo extends React.Component {
+    constructor() {
+        super();
+        this.state = { currentTechnology: null };
+    }
+
+    updateCurrentTechnology(technologyName) {
+        this.setState({ currentTechnology: technologyName })
+    }
+
+    handleTechnologyClick(e) {
+        e.preventDefault();
+        this.updateCurrentTechnology(e.target.innerText);
+    }
     render(){
+        const technologiesList = technologies.map((technology, index) => {
+            let technologyName = technology.name;
+            if (technology.filter) {
+                technologyName = (
+                    <a
+                        href="#projects"
+                        onClick={(e) => {
+                            this.handleTechnologyClick(e);
+                        }}
+                        data-tip="Click to see projects made with this technology"
+                    >
+                        {technology.name}
+                    </a>
+                );
+            }
+            return (
+                <span key={technology.name} className="technology_tag">
+                    {technologyName}&emsp;
+                </span>
+            );
+        });
         return(
             <section className="professional-info">
                 <h2 className="block-header professional-info__header">Skills</h2>
                 <div className="professional-info__block">
-                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">HTML</span></a>
-                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">CSS</span></a>
-                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">SASS</span></a>
-                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">Git</span></a>
-                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">JavaScript</span></a>
-                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">JQuery</span></a>
-                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">React</span></a>
-                    <a className="professional-info__button" data-tip="Click to see projects made with this technology"><span className="label label-info">Gulp</span></a>
+                    { technologiesList }
                 </div>
 
                 <h2 className="block-header">Portfolio</h2>
                 <article className="professional-info__block">
-                    <Projects />
+                    <Projects
+                        selectedTechnology={this.state.currentTechnology}
+                    />
 
                     <ul className="links-for-print">
                         <li>/furniture_store/</li>
@@ -93,6 +126,10 @@ class ProfessionalInfo extends React.Component {
         )
     }
 }
+
+ResumeTemplate.propTypes = {
+    currentTechnology: PropTypes.string
+};
 
 ReactDOM.render(
     <ResumeTemplate />,
