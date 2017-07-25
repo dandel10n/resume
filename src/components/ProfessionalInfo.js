@@ -23,10 +23,11 @@ class ProfessionalInfo extends React.Component {
                 technologyName = (
                     <a
                         href="#projects"
+                        className="technology_button"
+                        title="Click to see projects made with this technology"
                         onClick={(e) => {
                             this.handleTechnologyClick(e);
                         }}
-                        data-tip="Click to see projects made with this technology"
                     >
                         {technology.name}
                     </a>

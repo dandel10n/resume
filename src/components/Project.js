@@ -19,11 +19,11 @@ function Project(props) {
                     <p className="preview__image-desc">Live demo</p>
                 </a>
             </div>
-            <div>
+            <div className="project__info">
                 <p className="project__name"> { props.name } </p>
                 <p className="project__description">{ props.description }</p>
                 <p  className="project__link">Project on <a href={ props.repository } className="link">github</a></p>
-                <p>{technologies}</p>
+                <p className="labels">{technologies}</p>
             </div>
         </section>
     )
