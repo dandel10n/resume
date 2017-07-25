@@ -5,12 +5,11 @@ function Project(props) {
     const technologies = props.technologies.map(technology => (
         <span
             key={technology}
-            className="label label-info"
-        >{technology}&emsp;</span>
+            className="label"
+        >{technology}</span>
     ));
     return (
-        <section className="professional-info__block">
-            <h2 className="project__name"> { props.name } </h2>
+        <section className="project__block">
             <div className="project__image">
                 <a href={ props.url } className="preview">
                     <img className="preview__image"
@@ -20,12 +19,12 @@ function Project(props) {
                     <p className="preview__image-desc">Live demo</p>
                 </a>
             </div>
-            <div className="project__description">
-                <p>{ props.description }</p>
+            <div>
+                <p className="project__name"> { props.name } </p>
+                <p className="project__description">{ props.description }</p>
+                <p  className="project__link">Project on <a href={ props.repository } className="link">github</a></p>
                 <p>{technologies}</p>
             </div>
-            <p  className="project__link">Project on <a href={ props.repository } className="link">github</a></p>
-
         </section>
     )
 }

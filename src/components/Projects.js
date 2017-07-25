@@ -26,7 +26,7 @@ class Projects extends React.Component {
         const projectsToDisplay = this.renderProjectsList(filteredProjects);
 
         return (
-            <div>{ projectsToDisplay }</div>
+            <div className="projects__grid">{ projectsToDisplay }</div>
         );
     }
 
