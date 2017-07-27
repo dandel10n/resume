@@ -31,14 +31,17 @@ class Projects extends React.Component {
     }
 
     render() {
+
         return (
-            <div>{this.displayProjectsList()}</div>
+            <div>
+                {this.displayProjectsList()}
+            </div>
         )
     }
 }
 
 Projects.propTypes = {
-    selectedTechnology: PropTypes.string,
+    selectedTechnology: PropTypes.string
 };
 
 export default Projects;

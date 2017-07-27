@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import css from './static_src/sass/style.scss';
+import print from './static_src/sass/print.scss';
 import Sidebar from './components/Sidebar.js';
 import ProfessionalInfo from './components/ProfessionalInfo.js';
 

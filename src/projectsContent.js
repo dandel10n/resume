@@ -49,7 +49,7 @@ const projectsContent = [
         description: 'Online recipe box for your favourite recipes.',
         url: 'https://dandel10n.github.io/recipe_box/',
         image: recipe_box,
-        technologies: ['React'],
+        technologies: ['React', 'Local Storage', 'ES6'],
         repository: 'https://github.com/dandel10n/recipe_box'
     },
     {

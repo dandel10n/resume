@@ -22,10 +22,8 @@ body {
 }
 
 .resume-container {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 600px)  {
@@ -33,12 +31,10 @@ body {
     font-size: 14px;
   }
 }
-
-@media screen and (min-width: 700px) {
-  .resume-container {
-    flex-flow: row nowrap;
-    align-items: stretch;
-  }
+@media screen and (min-width: 700px)  {
+    .resume-container {
+        grid-template-columns: 40% 60%;
+    }
 }
 
 @media screen and (min-width: 1000px) {

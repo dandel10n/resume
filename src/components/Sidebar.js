@@ -12,7 +12,11 @@ class Sidebar extends React.Component {
                 <section className="basic-information">
                     <section className="target">
                         <i className="fa fa-bullseye icon" aria-hidden="true"></i><h2 className="block-header">Objective</h2>
-                        <p className="block-text">Searching for a position of Junior web developer.</p>
+                        <p className="block-text">I am looking for a position of Junior Front-end developer.
+                           I think it is really challenging area
+                           and there is no end of growing as a professional in it.
+                           This CV is made with React and Webpack,
+                           but I’m familiar with jQuery and vanilla JS too.</p>
                     </section>
                     <section className="general-info">
                         <i className="fa fa-info-circle icon" aria-hidden="true"></i><h2 className="block-header">General info</h2>

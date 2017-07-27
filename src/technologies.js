@@ -8,7 +8,7 @@ const technologies = [
     { name: 'Sass', filter: true },
     { name: 'jQuery', filter: true },
     { name: 'Gulp', filter: true },
-    { name: 'ES6', filter: false },
+    { name: 'ES6', filter: true },
     { name: 'Webpack', filter: false },
     { name: 'npm', filter: false },
     { name: 'Git', filter: false },

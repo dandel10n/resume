@@ -1,10 +1,10 @@
+$main-color: #139575;
+$hover-color: #4CC519;
+
 @import "reset";
 @import "base";
 $fa-font-path: "~font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome.scss';
-
-$main-color: #139575;
-$hover-color: #4CC519;
 
 .about-me {
   width: 100%;
@@ -44,8 +44,8 @@ $hover-color: #4CC519;
 }
 
 .basic-information {
-  padding-left: 3rem;
-  width: 90%;
+  padding-left: 2rem;
+  width: 85%;
 }
 
 .block-header {
@@ -60,7 +60,7 @@ $hover-color: #4CC519;
 }
 
 .block-text {
-  padding-left: 3rem;
+  padding-left: 2rem;
   line-height: 1.5;
   font-size: 1.1rem;
 }
@@ -123,30 +123,37 @@ $hover-color: #4CC519;
 
 .professional-info {
   width: 100%;
-  padding: 4rem 0 4rem 3rem;
+  padding: 4rem 0;
+  text-align: center;
 }
 
 .professional-info__block {
   line-height: 1.5;
   font-size: 1.1rem;
+  width: 90%;
+  margin: auto;
 }
-
-// .project__image {
-//     width: 15rem;
-//     height: 15rem;
-// }
 
 .preview {
     display: block;
-    width: 32rem;
-    height: 18rem;
-    line-height: 18rem;
-    position: relative;
+    text-decoration: none;
 
-  &:hover .preview__image-desc {
-    visibility: visible;
-    background-color: rgba($main-color, 0.702);
-  }
+    &:active,
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:hover .preview__image-desc {
+        visibility: visible;
+        background-color: rgba($main-color, 0.702);
+    }
+}
+
+.project__image {
+    position: relative;
+    width: 24rem;
+    height: 12rem;
+    line-height: 12rem;
 }
 
 .preview__image,
@@ -170,9 +177,13 @@ $hover-color: #4CC519;
 
 .email {
   color: #fff;
+  border-bottom: 1px dashed #fff;
+  text-decoration: none;
+
 
   &:hover {
     color: $hover-color;
+    border-bottom: 1px dashed $hover-color;
     text-decoration: none;
   }
 }
@@ -186,10 +197,11 @@ $hover-color: #4CC519;
     width: 100%;
 	grid-template-columns: 1fr;
     grid-gap: 2rem;
+    justify-items: center;
 }
 
 .project__block {
-    width: 32rem;
+    width: 24rem;
     border: 1px solid $main-color;
     border-radius: 4px;
 }
@@ -239,7 +251,6 @@ $hover-color: #4CC519;
 
 .label {
     display: inline-block;
-    max-width: 90px;
     height: 25px;
     line-height: 25px;
     padding-right: 5px;
@@ -254,15 +265,36 @@ $hover-color: #4CC519;
 
 .technology_button {
     color: $main-color;
-    //
-    // &:hover {
-    //     color:
-    // }
+    text-decoration: none;
+    border-bottom: 1px dashed $main-color;
+
+    &:hover {
+        color: $hover-color;
+        border-bottom: 1px dashed $hover-color;
+    }
+
+    &.active {
+        color: $hover-color;
+        border-bottom: 1px dashed $hover-color;
+    }
 }
 
-
-
 @media screen and (min-width: 700px) {
+
+    .professional-info {
+      width: 100%;
+      padding: 4rem 0 4rem 3rem;
+      text-align: left;
+    }
+
+    .professional-info__block {
+        margin: 0;
+    }
+
+    .projects__grid {
+        justify-items: start;
+    }
+
   #print-button {
     color: #595959;
   }
@@ -271,7 +303,7 @@ $hover-color: #4CC519;
       width: 20rem;
   }
 
-  .preview {
+  .project__image {
       width: 20rem;
       height: 10rem;
       line-height: 10rem;
@@ -279,14 +311,6 @@ $hover-color: #4CC519;
 }
 
 @media screen and (min-width: 1200px) {
-
-  .about-me {
-    width: 35%;
-  }
-
-  .professional-info {
-    width: 65%;
-  }
 
   .projects__grid {
       grid-template-columns: 20rem 20rem;

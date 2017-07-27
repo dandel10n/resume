@@ -10,19 +10,19 @@ function Project(props) {
     ));
     return (
         <section className="project__block">
-            <div className="project__image">
-                <a href={ props.url } className="preview">
+            <a href={ props.url } className="preview">
+                <div className="project__image">
                     <img className="preview__image"
                         src={props.image}
                         alt={props.name}
                     />
                     <p className="preview__image-desc">Live demo</p>
-                </a>
-            </div>
-            <div className="project__info">
+                </div>
                 <p className="project__name"> { props.name } </p>
+            </a>
+            <div className="project__info">
                 <p className="project__description">{ props.description }</p>
-                <p  className="project__link">Project on <a href={ props.repository } className="link">github</a></p>
+                <p className="project__link">Project on <a href={ props.repository } className="link">github</a></p>
                 <p className="labels">{technologies}</p>
             </div>
         </section>
