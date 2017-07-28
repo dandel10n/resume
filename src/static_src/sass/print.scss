@@ -37,6 +37,11 @@
     .professional-info {
         text-align: left;
         padding: 0;
+
+        &__block {
+            width: 100%;
+            margin-left: 24px;
+        }
     }
 
     .target {
@@ -81,10 +86,6 @@
       list-style-type: none;
     }
 
-    li {
-        content: "» ";
-    }
-
     .technology_button {
         color: #000;
         text-decoration: none;
@@ -101,9 +102,13 @@
     .general-info,
     .icon,
     .mini-icon,
-    .projects__grid,
+    .project__block,
     #print-button {
       display: none;
+    }
+
+    .projects__grid {
+        justify-items: start;
     }
 
     .email {
@@ -117,9 +122,5 @@
         color: #000;
         text-decoration: none;
       }
-    }
-
-    table td{
-      vertical-align: top;
     }
 }

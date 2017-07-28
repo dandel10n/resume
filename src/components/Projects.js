@@ -25,8 +25,17 @@ class Projects extends React.Component {
 
         const projectsToDisplay = this.renderProjectsList(filteredProjects);
 
+        const urls = projectsContent.map(item =>
+            <li key={item.name}>{item.url}</li>
+        );
+
         return (
-            <div className="projects__grid">{ projectsToDisplay }</div>
+            <div className="projects__grid">
+                { projectsToDisplay }
+                <ul className="links-for-print">
+                    { urls }
+                </ul>
+            </div>
         );
     }
 

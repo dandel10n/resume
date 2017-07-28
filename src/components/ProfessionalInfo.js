@@ -33,7 +33,7 @@ class ProfessionalInfo extends React.Component {
                     <a
                         href="#projects"
                         className={styles}
-                        title="Click to see projects made with this technology"
+                        title={"Click to see projects made with " + technology.name}
                         onClick={(e) => {
                             this.handleTechnologyClick(e);
                         }}
@@ -78,21 +78,6 @@ class ProfessionalInfo extends React.Component {
                     <Projects
                         selectedTechnology={this.state.currentTechnology}
                     />
-
-                    <ul className="links-for-print">
-                        <li>https://dandel10n.github.io/furniture_store/</li>
-                        <li>https://dandel10n.github.io/design_studio_project/</li>
-                        <li>https://dandel10n.github.io/global_factoring_network_site/</li>
-                        <li>https://dandel10n.github.io/trampolines_site/</li>
-                        <li>https://dandel10n.github.io/pomodoro_clock/</li>
-                        <li>https://dandel10n.github.io/tic-tac-toe_game/</li>
-                        <li>https://dandel10n.github.io/wiki_viewer/</li>
-                        <li>https://dandel10n.github.io/twitchTV/</li>
-                        <li>https://dandel10n.github.io/JS-Calculator/</li>
-                        <li>https://dandel10n.github.io/simon_game/</li>
-                        <li>https://dandel10n.github.io/camper_leaderboard/</li>
-                        <li>https://dandel10n.github.io/recipe_box/</li>
-                    </ul>
                 </article>
             </section>
         )
