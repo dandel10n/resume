@@ -53,6 +53,8 @@ module.exports = {
         contentBase: path.join(__dirname, "public"),
         compress: true,
         hot: true,
+        host: "0.0.0.0",
+        disableHostCheck: true,
         stats: "errors-only"
     },
     plugins: [

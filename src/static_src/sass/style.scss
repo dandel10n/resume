@@ -199,10 +199,24 @@ $fa-font-path: "~font-awesome/fonts";
     justify-items: center;
 }
 
+.project__block:not(:last-child) {
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+@supports(display: grid) {
+    .project__block:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
 .project__block {
     width: 20rem;
     border: 1px solid $main-color;
     border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .project__name {
@@ -277,6 +291,10 @@ $fa-font-path: "~font-awesome/fonts";
     }
 }
 
+.technology_tag {
+    display: inline-block;
+}
+
 @media screen and (min-width: 700px) {
 
     .professional-info {
@@ -292,15 +310,15 @@ $fa-font-path: "~font-awesome/fonts";
     .projects__grid {
         justify-items: start;
     }
-
-  #print-button {
-      color: #595959;
-    }
 }
 
 @media screen and (min-width: 1200px) {
 
-  .projects__grid {
-      grid-template-columns: 20rem 20rem;
-  }
+    #print-button {
+        color: #595959;
+    }
+
+    .projects__grid {
+        grid-template-columns: 20rem 20rem;
+    }
 }
