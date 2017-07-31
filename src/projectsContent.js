@@ -81,7 +81,7 @@ const projectsContent = [
         description: 'A list of the most active freeCodeCamp participants.',
         url: 'https://dandel10n.github.io/camper_leaderboard/',
         image: camper_leaderboard,
-        technologies: ['React'],
+        technologies: ['React', 'ES6'],
         repository: 'https://github.com/dandel10n/camper_leaderboard'
     },
     {

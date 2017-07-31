@@ -73,12 +73,9 @@ class ProfessionalInfo extends React.Component {
                     {this.state.currentTechnology ? resetButton : null}
                 </div>
 
-                <h2 className="block-header">Portfolio</h2>
-                <article className="portfolio__block">
-                    <Projects
-                        selectedTechnology={this.state.currentTechnology}
-                    />
-                </article>
+                <Projects
+                    selectedTechnology={this.state.currentTechnology}
+                />
             </section>
         )
     }
