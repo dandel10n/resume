@@ -38,7 +38,7 @@ const projectsContent = [
     },
     {
         name: 'Global Factoring Network Site',
-        description: 'This is one of test tasks which I made for Front-End developer position.',
+        description: "This is one of test tasks which I made for Front-End developer position. It isn't responsive(it was a requirement).",
         url: 'https://dandel10n.github.io/global_factoring_network_site/',
         image: global_factoring_network,
         technologies: ['Sass','Gulp'],

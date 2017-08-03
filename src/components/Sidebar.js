@@ -12,9 +12,8 @@ class Sidebar extends React.Component {
                 <section className="basic-information">
                     <section className="target">
                         <i className="fa fa-bullseye icon" aria-hidden="true"></i><h2 className="block-header">Objective</h2>
-                        <p className="block-text">I am looking for a position of Junior Front-end developer.
-                           I think it is really challenging area
-                           and there is no end of growing as a professional in it.
+                        <p className="block-text">Currently open for opportunities as a Junior Front-end Developer.
+                           I enjoy the challenges of these roles and believe there is no limit to professional development.
                            This CV is made with React and Webpack,
                            but I’m familiar with jQuery and vanilla JS too.</p>
                     </section>
@@ -22,8 +21,7 @@ class Sidebar extends React.Component {
                         <i className="fa fa-info-circle icon" aria-hidden="true"></i><h2 className="block-header">General info</h2>
                         <article className="block-text">
                             <p>City of residence: Bristol, UK</p>
-                            <p>Nationality: Belarusian</p>
-                            <p>Date of Birth: 28 Aug 1991</p>
+                            <p>Languages: Russian, English</p>
                         </article>
                     </section>
                     <section className="contacts">
