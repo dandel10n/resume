@@ -10,7 +10,7 @@ function Project(props) {
     ));
     return (
         <section className="project__block">
-            <a href={ props.url } className="preview">
+            <a href={ props.url } className="preview" target="_blank">
                 <div className="project__image">
                     <img className="preview__image"
                         src={props.image}
