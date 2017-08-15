@@ -66,7 +66,7 @@ class ProfessionalInfo extends React.Component {
 
         return(
             <section className="professional-info">
-                <a href="javascript:window.print()" id="print-button"><i className="fa fa-print" aria-hidden="true"></i></a>
+                <a href="/MaryiaRadchuk_CV.pdf" id="print-button" target="_blank"><i className="fa fa-print" aria-hidden="true"></i></a>
                 <h2 className="block-header professional-info__header">Technologies and tools</h2>
                 <div className="professional-info__block">
                     { technologiesList }

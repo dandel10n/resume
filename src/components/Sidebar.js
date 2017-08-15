@@ -14,8 +14,9 @@ class Sidebar extends React.Component {
                         <i className="fa fa-bullseye icon" aria-hidden="true"></i><h2 className="block-header">Objective</h2>
                         <p className="block-text">Currently looking for opportunities as a Junior Front-end Developer.
                            I enjoy the challenges of front-end work and believe there is no limit to professional development.
-                           This CV is made with React and Webpack,
-                           but I’m familiar with jQuery and vanilla JS too.</p>
+                           In my work I use JavaScript(Jquery), React, HTML, CSS(Sass), Gulp, Webpack, Git, npm.
+                           This CV is made with React and Webpack, but I can write vanilla JS too.
+                        </p>
                     </section>
                     <section className="general-info">
                         <i className="fa fa-info-circle icon" aria-hidden="true"></i><h2 className="block-header">General info</h2>
@@ -41,8 +42,8 @@ class Sidebar extends React.Component {
                     </section>
                 </section>
                 <section className="social-media-links">
-                    <div className="social-media-link"><a href="https://www.linkedin.com/in/mariya-radchuk" className="fa fa-linkedin icon social-media-links__icon" aria-hidden="true"></a></div>
-                    <div className="social-media-link"><a href="https://github.com/dandel10n" className="fa fa-github icon social-media-links__icon" aria-hidden="true"></a></div>
+                    <div className="social-media-link"><a href="https://www.linkedin.com/in/mariya-radchuk" className="fa fa-linkedin icon social-media-links__icon" aria-hidden="true" target="_blank"></a></div>
+                    <div className="social-media-link"><a href="https://github.com/dandel10n" className="fa fa-github icon social-media-links__icon" aria-hidden="true" target="_blank"></a></div>
                 </section>
             </section>
         )

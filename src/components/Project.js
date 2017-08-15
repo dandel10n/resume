@@ -22,7 +22,7 @@ function Project(props) {
             </a>
             <div className="project__info">
                 <p className="project__description">{ props.description }</p>
-                <p className="project__link">Project on <a href={ props.repository } className="link">github</a></p>
+                <p className="project__link">Project on <a href={ props.repository } className="link" target="_blank">github</a></p>
                 <p className="labels">{technologies}</p>
             </div>
         </section>
