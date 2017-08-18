@@ -67,7 +67,18 @@ class ProfessionalInfo extends React.Component {
         return(
             <section className="professional-info">
                 <a href="/MaryiaRadchuk_CV.pdf" id="print-button" target="_blank"><i className="fa fa-print" aria-hidden="true"></i></a>
-                <h2 className="block-header professional-info__header">Technologies and tools</h2>
+                <h2 className="block-header professional-info__header">Participation in projects</h2>
+                <div className="professional-info__block">
+                    <div>
+                        <a href='https://javascript101.co.uk/' className='link participate_project' target='_blank'>Javascript101</a>
+                        <p className='participation project__description'>JavaScript meetup group in Bristol, UK. Now we are working on the <a href="https://resources.javascript101.co.uk/" className='link' target='_blank'>JS resources app</a>.</p>
+                    </div>
+                    <div>
+                        <a href='https://github.com/opendataby/city-dashboard' className='link participate_project' target='_blank'>Minsk City Dashboard</a>
+                        <p className='participation project__description'>A city dweller&apos;s desk is a dashboard of Minsk, based on open datasets.</p>
+                    </div>
+                </div>
+                <h2 className="block-header">Technologies and tools</h2>
                 <div className="professional-info__block">
                     { technologiesList }
                     {this.state.currentTechnology ? resetButton : null}

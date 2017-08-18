@@ -14,7 +14,7 @@ import js_calculator from './static_src/img/js_calculator.png'
 const projectsContent = [
     {
         name: 'Furniture Store Site',
-        description: "This site prototype was made as studying project. It was designed by Yana Smirnova and Natalia Izum.",
+        description: "The project is written with Sass and compiled with Gulp. I've used nunjucks for html templates. The project is made responsive, using mobile first and progressive enhancement strategies. It was designed by Yana Smirnova and Natalia Izum.",
         url: 'https://dandel10n.github.io/furniture_store/',
         image: furniture_store,
         technologies: ['Sass', 'Gulp', 'Nunjucks'],
@@ -22,7 +22,7 @@ const projectsContent = [
     },
     {
         name: 'Trampolines Site',
-        description: "This is one of test tasks which I made for Front-End developer vacancy. ",
+        description: "The project is written with Sass and compiled with Gulp. It was made responsive, using mobile first.",
         url: 'https://dandel10n.github.io/trampolines_site/',
         image: trampolines_site,
         technologies: ['Sass', 'Gulp'],
@@ -30,7 +30,7 @@ const projectsContent = [
     },
     {
         name: 'Design Studio Site',
-        description: "It is my first studying project in front-end. This design was made by Rudhi Sasmito.",
+        description: "The project is written with sass and compiled with Gulp. I've made it responsive, using mobile first and progressive enhancement strategies. This design was made by Rudhi Sasmito.",
         url: 'https://dandel10n.github.io/design_studio_project/',
         image: design_studio,
         technologies: ['Sass', 'Gulp'],
@@ -38,7 +38,7 @@ const projectsContent = [
     },
     {
         name: 'Global Factoring Network Site',
-        description: "This is one of test tasks which I made for Front-End developer position. It isn't responsive(it was a requirement).",
+        description: "The project is written with Sass and compiled with Gulp. It isn't responsive(it was a requirement).",
         url: 'https://dandel10n.github.io/global_factoring_network_site/',
         image: global_factoring_network,
         technologies: ['Sass','Gulp'],
