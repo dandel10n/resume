@@ -1,6 +1,7 @@
 import React from 'react';
 import Projects from './Projects.js';
 import technologies from './../technologies.js';
+import MaryiaRadchuk_CV from './../MaryiaRadchuk_CV.pdf';
 
 class ProfessionalInfo extends React.Component {
     constructor() {
