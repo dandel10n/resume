@@ -43,7 +43,6 @@ class Projects extends React.Component {
 
         return (
             <div className="portfolio__block">
-                <h2 className="block-header">Portfolio</h2>
                 {this.displayProjectsList()}
             </div>
         )

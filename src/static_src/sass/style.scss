@@ -131,6 +131,10 @@ $fa-font-path: "~font-awesome/fonts";
     font-size: 1.1rem;
     width: 90%;
     margin: auto;
+
+    &.technology_buttons {
+        margin-bottom: 2.5rem;
+    }
 }
 
 .preview {

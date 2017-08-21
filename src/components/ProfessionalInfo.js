@@ -79,8 +79,8 @@ class ProfessionalInfo extends React.Component {
                         <p className='participation project__description'>A city dweller&apos;s desk is a dashboard of Minsk, based on open datasets.</p>
                     </div>
                 </div>
-                <h2 className="block-header">Technologies and tools</h2>
-                <div className="professional-info__block">
+                <h2 className="block-header">Filter projects by technology</h2>
+                <div className="professional-info__block technology_buttons">
                     { technologiesList }
                     {this.state.currentTechnology ? resetButton : null}
                 </div>
