@@ -13,7 +13,7 @@ class Sidebar extends React.Component {
                     <section className="target">
                         <i className="fa fa-bullseye icon" aria-hidden="true"></i><h2 className="block-header">Objective</h2>
                         <p className="block-text">
-                            Currently looking for opportunities as a Junior Front-end Developer.
+                            Currently looking for opportunities as a Front-end Developer.
                             I enjoy the challenges of front-end work and believe there is no limit to professional development.
                             I’m familiar with vanilla JavaScript and with some JS frameworks like React and jQuery. I’m good with HTML and CSS (Sass).
                             I use tools like Webpack and Gulp, Git, npm. This page is made with React and Webpack.

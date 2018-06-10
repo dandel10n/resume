@@ -30,7 +30,7 @@ const projectsContent = [
     },
     {
         name: 'Design Studio Site',
-        description: "The project is written with sass and compiled with Gulp. I've made it responsive, using mobile first and progressive enhancement strategies. This design was made by Rudhi Sasmito.",
+        description: "The project is written with Sass and compiled with Gulp. I've made it responsive, using mobile first and progressive enhancement strategies. This design was made by Rudhi Sasmito.",
         url: 'https://dandel10n.github.io/design_studio_project/',
         image: design_studio,
         technologies: ['Sass', 'Gulp'],
